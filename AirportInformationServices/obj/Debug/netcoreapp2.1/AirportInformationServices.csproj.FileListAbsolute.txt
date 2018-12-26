@@ -1,0 +1,9 @@
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\bin\Debug\netcoreapp2.1\AirportInformationServices.deps.json
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\bin\Debug\netcoreapp2.1\AirportInformationServices.dll
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\bin\Debug\netcoreapp2.1\AirportInformationServices.pdb
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.csproj.CoreCompileInputs.cache
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.AssemblyInfoInputs.cache
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.AssemblyInfo.cs
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.dll
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.pdb
+C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.csprojAssemblyReference.cache
