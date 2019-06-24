@@ -7,3 +7,12 @@ C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\
 C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.dll
 C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.pdb
 C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.csprojAssemblyReference.cache
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\bin\Debug\netcoreapp2.1\AirportInformationServices.deps.json
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\bin\Debug\netcoreapp2.1\AirportInformationServices.dll
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\bin\Debug\netcoreapp2.1\AirportInformationServices.pdb
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.csprojAssemblyReference.cache
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.csproj.CoreCompileInputs.cache
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.AssemblyInfoInputs.cache
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.AssemblyInfo.cs
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.dll
+D:\Development\GitHubNet\ApiRestClient\AirportInformationServices\obj\Debug\netcoreapp2.1\AirportInformationServices.pdb
