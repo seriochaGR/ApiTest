@@ -10,15 +10,3 @@ C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformation.Api.Client\o
 C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformationServices.dll
 C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformationServices.pdb
 C:\Users\BETWEEN\source\repos\AirportInformation\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.csproj.CopyComplete
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformation.Api.Client.deps.json
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformation.Api.Client.dll
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformation.Api.Client.pdb
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformationServices.dll
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\bin\Debug\netcoreapp2.1\AirportInformationServices.pdb
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.csprojAssemblyReference.cache
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.csproj.CoreCompileInputs.cache
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.AssemblyInfoInputs.cache
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.AssemblyInfo.cs
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.csproj.CopyComplete
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.dll
-D:\Development\GitHubNet\ApiRestClient\AirportInformation.Api.Client\obj\Debug\netcoreapp2.1\AirportInformation.Api.Client.pdb

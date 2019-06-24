@@ -1,5 +1,6 @@
 ﻿using AirportInformation.Api.Client.Proxy;
 using AirportInformation.Api.Client.RestObjects;
+using RestSharp.Serialization.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -11,7 +12,7 @@ namespace AirportInformation.Api.Client.RequestActions
     {
         public List<RestAirport> GetAllAirportsInformation()
         {
-            RestSharp.Deserializers.JsonDeserializer deserial = new RestSharp.Deserializers.JsonDeserializer();
+            JsonDeserializer deserial = new JsonDeserializer();
             var RestResponse = AirportInformationProxy.RequestManager(RestSharp.Method.GET);
 
             List<RestAirport> restResultList = new List<RestAirport>();
