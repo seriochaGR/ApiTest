@@ -10,10 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AirportInformation.Controllers
 {
+    [ApiController]
+    [ApiConventionType(typeof(DefaultApiConventions))]
     [Route("api/[controller]/[action]")]
     public class AirportInformationController : Controller
     {
-        private IAirportInformationService airportInformationService;
+        private readonly IAirportInformationService airportInformationService;
 
         public AirportInformationController(IAirportInformationService airportInformationService)
         {
@@ -42,8 +44,6 @@ namespace AirportInformation.Controllers
         }
 
         [HttpGet()]
-        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> GetAirportsByCountry(string country)
         {
             if (string.IsNullOrEmpty(country))
