@@ -2,11 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AirportInformation.Api.Client.RequestActions
 {
     internal interface IAirportInformationClientServices
     {
-        List<RestAirport> GetAllAirportsInformation();
+        Task<IReadOnlyList<RestAirport>> GetAllAirportsInformation();
     }
 }

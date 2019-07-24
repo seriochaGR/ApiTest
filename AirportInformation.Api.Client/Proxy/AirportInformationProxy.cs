@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AirportInformation.Api.Client.Proxy
 {
@@ -11,7 +12,7 @@ namespace AirportInformation.Api.Client.Proxy
     {
         private const string baseUrl = @"https://raw.githubusercontent.com/jbrooksuk/JSON-Airports/master/airports.json";
 
-        public static IRestResponse RequestManager(Method requestMethod)
+        public static async Task<IRestResponse> RequestManager(Method requestMethod)
         {
             var client = new RestClient(baseUrl);
             var request = new RestRequest();
@@ -26,9 +27,9 @@ namespace AirportInformation.Api.Client.Proxy
               .Handle<WebException>()
               .Retry(maxRetryAttempts);
 
-            var JsonResponse = policy.Execute(() =>
+            var JsonResponse = await policy.Execute(() =>
             {
-                return client.Execute(request);
+                return Task.Run(() => client.Execute(request));
             });
 
             if (JsonResponse.ResponseStatus == ResponseStatus.Completed)

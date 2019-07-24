@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using AirportInformation.DTO;
 using AirportInformationServices.Services;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AirportInformation.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class AirportInformationController : Controller
     {
         private IAirportInformationService airportInformationService;
@@ -19,12 +20,12 @@ namespace AirportInformation.Controllers
             this.airportInformationService = airportInformationService;
         }
 
-        [HttpGet("[action]")]
-        public IEnumerable<AirportDTO> GetAllAirports()
+        [HttpGet()]
+        public async Task<IActionResult> GetAllAirports()
         {
-            var airports = airportInformationService.GetAllAirports();
+            var airports = await airportInformationService.GetAllAirports();
 
-            var result = airports.Select(a =>
+            var result =  airports.Select(a =>
                 new AirportDTO()
                 {
                     Iata = a.Iata,
@@ -37,13 +38,20 @@ namespace AirportInformation.Controllers
                     Coordinate = new GeoCoordinateDTO(a.Coordinate.Lon, a.Coordinate.Lat)
                 });
 
-            return result;
+            return Ok(result);
         }
 
-        [HttpGet("[action]")]
-        public IEnumerable<AirportDTO> GetAirportsByCountry(string country)
+        [HttpGet()]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> GetAirportsByCountry(string country)
         {
-            var airports = airportInformationService.GetAirportsByCountry(country);
+            if (string.IsNullOrEmpty(country))
+                return BadRequest();
+
+            var airports = await airportInformationService.GetAirportsByCountry(country);
+            if (airports == null || airports.Count == 0)
+                return NotFound();
 
             var result = airports.Select(a =>
                 new AirportDTO()
@@ -58,7 +66,7 @@ namespace AirportInformation.Controllers
                     Coordinate = new GeoCoordinateDTO(a.Coordinate.Lon, a.Coordinate.Lat)
                 });
 
-            return result;
+            return Ok(result);
         }
     }
 }

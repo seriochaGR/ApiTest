@@ -2,11 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AirportInformationServices.Contracts
 {
     public interface IAirportInformationClient
     {
-        List<Airport> GetAllAirportsInformation();
+        Task<IReadOnlyList<Airport>> GetAllAirportsInformation();
     }
 }

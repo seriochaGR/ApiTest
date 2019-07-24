@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AirportInformationServices.Services
 {
@@ -16,15 +17,15 @@ namespace AirportInformationServices.Services
             this.airportInformation = airportInformation;            
         }
 
-        public List<Airport> GetAllAirports()
+        public async Task<IReadOnlyList<Airport>> GetAllAirports()
         {
-            var result = airportInformation.GetAllAirportsInformation();
+            var result = await airportInformation.GetAllAirportsInformation();
             return result;
         }
 
-        public List<Airport> GetAirportsByCountry(string country)
+        public async Task<IReadOnlyList<Airport>> GetAirportsByCountry(string country)
         {
-            var result = airportInformation.GetAllAirportsInformation();
+            var result = await airportInformation.GetAllAirportsInformation();
             return result.Where(a => a.Iso.Equals(country)).ToList();
         }
     }

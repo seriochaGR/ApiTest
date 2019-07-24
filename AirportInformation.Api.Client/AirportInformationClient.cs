@@ -8,6 +8,7 @@ using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AirportInformation.Api.Client
 {
@@ -24,12 +25,12 @@ namespace AirportInformation.Api.Client
             mapper = mapperConfig.CreateMapper();
         }
 
-        public List<Airport> GetAllAirportsInformation()
+        public async Task<IReadOnlyList<Airport>> GetAllAirportsInformation()
         {
             try
             {
-                List<RestAirport> restInformation = airportInformationServices.GetAllAirportsInformation();
-                var resultList = mapper.Map<List<RestAirport>, List<Airport>>(restInformation);
+                var restInformation = await airportInformationServices.GetAllAirportsInformation();
+                var resultList = mapper.Map<IReadOnlyList<RestAirport>, IReadOnlyList<Airport>>(restInformation);
                 return resultList;
             }
             catch (AirportInformationClientException ex)

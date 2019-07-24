@@ -2,13 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AirportInformationServices.Services
 {
     public interface IAirportInformationService
     {
-        List<Airport> GetAllAirports();
+        Task<IReadOnlyList<Airport>> GetAllAirports();
 
-        List<Airport> GetAirportsByCountry(string country);
+        Task<IReadOnlyList<Airport>> GetAirportsByCountry(string country);
     }
 }
