@@ -27,8 +27,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\DTOs\AirportDTO.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AirportInformation.Api.Client\AirportInformation.Api.Client.csproj" />
     <ProjectReference Include="..\AirportInformationServices\AirportInformationServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\DTOs\AirportDTO.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

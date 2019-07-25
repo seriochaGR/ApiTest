@@ -1,0 +1,32 @@
+<div class="text-center">
+  <h1>List of Ports</h1>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <td>Name</td>
+          <td>IATA</td>
+          <td>ISO</td>
+          <td>Type</td>
+          <td>Status</td>
+          <td>Size</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let port of ports">
+          <td>{{ port.name }}</td>
+          <td>{{ port.iata }}</td>
+          <td>{{ port.iso }}</td>
+          <td>{{ port.type }}</td>
+          <td>{{ port.status }}</td>
+          <td>{{ port.size }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  
+</div>
+
